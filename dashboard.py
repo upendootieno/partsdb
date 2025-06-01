@@ -9,6 +9,8 @@ import seaborn as sns
 import plotly.express as px
 import streamlit as st
 
+st.title("🚀 Brand and Price Comparison")
+
 data = pd.read_csv("ecommerce_products_20250531_194248.csv")
 
 categories = data[data["brand"].notna()]["brand"].unique()
